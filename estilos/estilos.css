@@ -1,0 +1,113 @@
+.titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: bolder;
+  /*display: grid;*/
+  grid-area: titulo;
+  margin: 0;
+  /*justify-content: center;
+  align-content: center;*/
+  font-size: 45px;
+}
+
+.headerProductos {
+  background-color: rgba(255, 199, 209, 0.527);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "casitaInicio titulo titulo boton";
+  justify-items: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  font-size: 66px;
+  padding: 150cm;
+  margin: 150cm;
+}
+
+.nav-item {
+  font-size: 45px;
+  padding: 150cm;
+  margin: 150cm;
+}
+
+.boton_header {
+  display: grid;
+  height: 25px;
+  width: 1000px;
+  grid-area: boton;
+  justify-self: center;
+}
+
+.casitaInicio {
+  grid-area: casitaInicio;
+}
+
+.nav-item {
+  font-size: 20px;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 376px) {
+  .nav-item {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-floating-label {
+    font-size: 8.5px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 517px) {
+  .titulo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 516px) and (min-width: 321px) {
+  .titulo {
+    font-size: 20px;
+  }
+  .nav-item {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo {
+    font-size: 20px;
+  }
+  .nav-item {
+    font-size: 10px;
+  }
+  .object-fit-sm-contain {
+    width: 50px;
+    height: 50px;
+  }
+}
+@font-face {
+  font-family: "fuentelocal";
+  src: url(../fuentes/fuentelocal.ttf);
+}
+.lista-nav {
+  font-size: 50px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

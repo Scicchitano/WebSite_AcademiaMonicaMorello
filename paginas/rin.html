@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="../multimedia/LOGOTTH.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--TITULO-->
+    <title>THE TRUE HELL CAPS</title>
+
+    <!-- importo bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <!-- importo mi css -->
+   <link rel="stylesheet" href="../css/styles.css">
+
+
+</head>
+
+
+<body class="todo">
+<!--EN MI HEADER SE ENCUENTRA LA CASITA PARA VOLVER AL INDEX Y TITULO-->
+  <header class="headerProductos">
+    <svg  class="casitaInicio"xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+      <a xlink:href="../index.html">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+      </a>  
+    </svg>
+  <!--TITULO-->
+    <h1 class="titulo">
+        THE TRUE HELL CAPS
+    </h1> 
+
+<!--BOTON INICIAR SESION-->
+    <button type="button" class="btn btn-outline-primary boton_header me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Iniciar Sesión</button>
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">COMPLETA TUS DATOS:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+<!--FORMULARIO INICIAR SESION -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+              </div>
+              <button type="submit" class="btn btn-primary">INICIAR</button>
+            </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+<!--PRODUCTOS -->
+  <nav class="navbar navbar-expand navbar-light bg-light ">
+    <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav te lista-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="todo.html">Ver todo <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gorras.html">Gorras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bando.html">Bandoleras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rin.html">Riñoneras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sale.html">SALE!</a>
+        </li>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!--CARRITO-->
+    <a xlink:href="#" class="btn-cta" >
+      <rect   data-toggle="modal" data-target="#section-h-modal" id="section-h" 
+       x="112.6" y="31.4" class="mapsvg-region" width="35.2" height="69.3" 
+       style="vector-effect: non-scaling-stroke; fill: rgb(1, 6, 8);" >
+      </rect>
+     </a>
+     
+  <svg class="carrito me-5"   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+    <g>
+      <a xlink:href="#" class="btn-cta" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo" >  
+        <path transform="translate(-10px, 0px)" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+      </a>
+    </g>
+  </svg>
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS DE FACTURACION:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+<!--FORMULARIO INICAR SESION -->
+          <form>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="CALLE N°">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Numero de contacto:</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Entidad bancaria</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Forma de pago</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Mercado pago</option>
+                  <option>Tarjeta bancaria</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ingresar numero de CBU / tarjeta </label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck"> ACEPTO ENVIAR DATOS PERSONALES
+                  <label class="form-check-label" for="gridCheck">
+                    
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+              </div>
+            </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+  </nav>
+
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" class="categorias">
+    <!-- TITULO PAGINA -->
+    <div class="ms-4 d-none d-lg-block">
+      <h1>RIÑONERAS:</h1>
+    </div>
+  </section>
+
+  <!--CARDS-->
+  <div>
+    <div class="card-group m-3">
+      <div class="card ">
+        <!--CARRUSEL-->
+        <div id="carruselInterval1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../multimedia/RIN1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../multimedia/RIN2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/RINN3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--CARRUSEL-->
+        <div class="card-body">
+          <h5 class="card-title">Talles disponibles:</h5>
+          <p class="card-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+              <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+            </svg>
+            <div class="testNose">
+
+              <h2 class="Oferta"> <del>$6000</del> --> $5000</h2>
+              
+               <!--BOTON INICIAR SESIÓN -->
+            <button type="button" class="btn btn-primary boton_header me-3" data-bs-toggle="modal" data-bs-target="#exampleModalLongA" data-bs-whatever="@mdo">Agregar</button>
+              
+            <!-- Modal boton agregar-->
+            <div class="modal fade" id="exampleModalLongA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Agregar producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  ¿DESEAS AGREGAR AL CARRITO ESTE PRODUCTO?
+                  <img src="../multimedia/RIN1.jpg"  width="300" height="300" class="rounded mx-auto d-block" alt="...">
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Selecione talle:</option>
+                    <option value="1">UNO</option>
+                    <option value="2">DOS</option>
+                    <option value="3">TRES</option>
+                  </select>
+                  
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
+                    <option selected>Seleccione color:</option>
+                    <option value="1">Beige</option>
+                    <option value="2">Gris</option>
+                    <option value="3">Negro</option>
+                  </select>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    <a type="button" class="btn btn-primary" href="rin.html">Confirmar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </p>
+    </div>
+        <div class="card-footer">
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="red" stroke="red" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="green" stroke="green" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="black" stroke="black" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="blue" stroke="blue" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="white" stroke="white" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="pink" stroke="pink" stroke-width="1px"/>  
+          </svg>
+        </div>
+      </div>
+      <div class="card ">
+        <!--CARRUSEL-->
+        <div id="carruselInterval2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../multimedia/RIÑO1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../multimedia/RIÑO2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/RIÑO3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--CARRUSEL-->
+        <div class="card-body">
+          <h5 class="card-title">Talles disponibles:</h5>
+          <p class="card-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+              <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+            </svg>
+            <div class="testNose">
+
+              <h2 class="Oferta"> $5500</h2>
+              
+             <!--BOTON INICIAR SESIÓN -->
+             <button type="button" class="btn btn-primary boton_header me-3" data-bs-toggle="modal" data-bs-target="#exampleModalLongB" data-bs-whatever="@mdo">Agregar</button>
+              
+             <!-- Modal boton agregar-->
+             <div class="modal fade" id="exampleModalLongB" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLongTitle">Agregar producto</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   <div class="modal-body">
+                   ¿DESEAS AGREGAR AL CARRITO ESTE PRODUCTO?
+                   <img src="../multimedia/RIÑO1.jpg"  width="300" height="300" class="rounded mx-auto d-block" alt="...">
+                   <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                     <option selected>Selecione talle:</option>
+                     <option value="1">UNO</option>
+                     <option value="2">DOS</option>
+                     <option value="3">TRES</option>
+                   </select>
+                   
+                   <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
+                     <option selected>Seleccione color:</option>
+                     <option value="1">Beige</option>
+                     <option value="2">Gris</option>
+                     <option value="3">Negro</option>
+                   </select>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                     <a type="button" class="btn btn-primary" href="rin.html">Confirmar</a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+         </div>
+     </p>
+     </div>
+        <div class="card-footer">
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="red" stroke="red" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="green" stroke="green" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="black" stroke="black" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="blue" stroke="blue" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="white" stroke="white" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="pink" stroke="pink" stroke-width="1px"/>  
+          </svg>
+        </div>
+      </div>
+      <div class="card ">
+        <!--CARRUSEL-->
+        <div id="carruselInterval3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../multimedia/RIÑÑ1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../multimedia/RIÑÑ2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/RIÑÑ3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInterval3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInterval3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--CARRUSEL-->
+        <div class="card-body">
+          <h5 class="card-title">Talles disponibles:</h5>
+          <p class="card-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+              <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+              <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+            </svg>
+            <div class="testNose">
+
+              <h2 class="Oferta"> $4500</h2>
+              
+              <!--BOTON INICIAR SESIÓN -->
+            <button type="button" class="btn btn-primary boton_header me-3" data-bs-toggle="modal" data-bs-target="#exampleModalLongC" data-bs-whatever="@mdo">Agregar</button>
+              
+            <!-- Modal boton agregar-->
+            <div class="modal fade" id="exampleModalLongC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Agregar producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  ¿DESEAS AGREGAR AL CARRITO ESTE PRODUCTO?
+                  <img src="../multimedia/RIÑÑ1.jpg"  width="300" height="300" class="rounded mx-auto d-block" alt="...">
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Selecione talle:</option>
+                    <option value="1">UNO</option>
+                    <option value="2">DOS</option>
+                    <option value="3">TRES</option>
+                  </select>
+                  
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
+                    <option selected>Seleccione color:</option>
+                    <option value="1">Beige</option>
+                    <option value="2">Gris</option>
+                    <option value="3">Negro</option>
+                  </select>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
+                    <a type="button" class="btn btn-primary" href="rin.html">Confirmar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </p>
+    </div>
+        <div class="card-footer">
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="red" stroke="red" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="green" stroke="green" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="black" stroke="black" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="blue" stroke="blue" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="white" stroke="white" stroke-width="1px"/>  
+          </svg>
+          <svg  width="34px" height="34px">
+            <circle  cx="15" cy="15" r="10" fill="pink" stroke="pink" stroke-width="1px"/>  
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--CARDS-->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <p class="h3">Conéctese con nosotros en las redes sociales:</p>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/thetruehellcaps/" class="me-4 link-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/es/" class="me-4 link-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/thetruehellcaps/?hl=es" class="me-4 link-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Suscríbete a nuestro newsletter: 
+            </h6>
+            <p>
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                    <label for="floatingInputGrid" class="form-floating-label">E-mail</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelectGrid">
+                      <option value="1">PROMOCIONES</option>
+                      <option value="2">TODO</option>
+                    </select>
+                    <label for="floatingSelectGrid" class="form-floating-label">¿Que deseas recibir?</label>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 menu-pagos">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Medios de pago:
+            </h6>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+              </svg>
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+              </svg>
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Utiles:
+            </h6>
+            <p>
+              <a href="preguntas.html" class="text-reset">Preguntas frecuentes</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto:</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Galeria 12, Local 24</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@tthellcaps.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 54 11 567 3488</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">CODERHOUSE</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
+</html>

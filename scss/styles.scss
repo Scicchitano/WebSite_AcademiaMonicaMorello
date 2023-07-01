@@ -1,0 +1,71 @@
+@import "header";
+@import "texto";
+@import "avales";
+@import "cards";
+@import "main";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box}
+html{
+    font-size: 62.5%
+}
+
+@media screen and (max-width: 376px) {
+    .nav-item{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-floating-label{
+        font-size: 8.5px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 517px) {
+    .titulo{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 516px) and (min-width: 321px) {
+    .titulo{
+        font-size: 20px;
+    }
+    .nav-item{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .titulo{
+        font-size: 20px;
+    }
+    .nav-item{
+        font-size: 10px;
+    }
+    .object-fit-sm-contain{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@font-face {
+    font-family: "fuentelocal";
+    src:
+     url(../fuentes/fuentelocal.ttf);
+}
+
+.lista-nav{
+    font-size: 50px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+

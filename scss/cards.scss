@@ -1,0 +1,22 @@
+.card-title{
+    display: flex;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    border: 1px solid black;
+}
+
+h1{
+    display: inline;
+}
+
+.card-body:hover{
+    width: 1000px;
+}
+
+.cardResumen{
+    height: 10px;
+}
