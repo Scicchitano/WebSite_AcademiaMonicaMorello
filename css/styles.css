@@ -85,10 +85,28 @@
   color: rgb(89, 97, 97);
 }
 
+.form {
+  margin: auto;
+  width: 640px;
+  padding: 50px;
+  font-family: "Avenir", sans-serif;
+  color: #33475b;
+}
+
+.tituloCursos {
+  font-size: 25px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
 .logos {
   background-color: white;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.card {
+  padding: 10px;
 }
 
 .card-title {
