@@ -9,6 +9,25 @@
   font-size: 45px;
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.navGeneral {
+  background-color: rgb(253, 238, 249);
+}
+
+.titleMenu {
+  color: black;
+  font-size: 18px;
+}
+
+.menuHeader {
+  justify-content: center;
+}
+
 .headerProductos {
   background-color: rgba(255, 199, 209, 0.527);
   display: grid;
@@ -107,12 +126,27 @@
 
 .card {
   padding: 10px;
+  width: 300px;
 }
 
 .card-title {
   display: flex;
   font-size: 20px;
   font-weight: bolder;
+}
+
+.tarjetasCursos {
+  display: flex;
+  justify-content: center;
+}
+
+.card .card-content {
+  padding: 1px;
+}
+
+.btnModalRight {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {

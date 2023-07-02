@@ -1,6 +1,7 @@
 
 .card{
     padding: 10px;
+    width: 300px;
 }
 .card-title{
     display: flex;
@@ -8,7 +9,20 @@
     font-weight: bolder;
 }
 
+.tarjetasCursos{
+    display: flex;
+    justify-content: center;
+}
 
+.card .card-content {
+    padding: 1px;
+}
+
+
+.btnModalRight{
+    display: flex;
+    justify-content: center;
+}
 
 h1{
     display: inline;
