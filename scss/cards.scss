@@ -15,11 +15,18 @@
 }
 
 .card .card-content {
+    display: flex;
     padding: 1px;
+    margin: 20px;
 }
 
 
 .btnModalRight{
+    display: flex;
+    justify-content: center;
+}
+
+.botonVerMas{
     display: flex;
     justify-content: center;
 }
@@ -29,12 +36,41 @@ h1{
 }
 
 
-.cardResumen{
-    display: block;
-    align-content: start;
+.lineaSeparadora{
+    margin: 10px;
 }
+
+.titulosCategoriaCurso{
+    margin: 10px;
+}
+
+.tarjetasGrid{
+    display: grid;
+    border: none;
+    margin: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "cardResumen cardGeneral";
+}
+
+.cardResumen{
+    grid-area: cardResumen;
+}
+
+.cardGeneral{
+    width: auto;
+    grid-area: cardGeneral;
+}
+
+
 
 
 .card-body{
     justify-self: end;
+}
+
+
+.btn{
+    background-color: #f8bbd0;
 }
