@@ -127,6 +127,7 @@
 .card {
   padding: 10px;
   width: 300px;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -194,6 +195,17 @@ h1 {
 
 .btn {
   background-color: #f8bbd0;
+  font-weight: bold;
+}
+
+.collapsible-header {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.collapsible-body {
+  font-size: larger;
+  margin-left: 20px;
 }
 
 .Tarjetas {
@@ -201,6 +213,10 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
+}
+
+.page-footer {
+  background-color: rgb(183, 163, 177);
 }
 
 * {

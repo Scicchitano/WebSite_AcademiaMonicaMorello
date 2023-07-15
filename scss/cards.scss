@@ -2,6 +2,7 @@
 .card{
     padding: 10px;
     width: 300px;
+    border-radius : 10px;
 }
 .card-title{
     display: flex;
@@ -56,7 +57,7 @@ h1{
 
 .cardResumen{
     border: #f8bbd0;
-    
+
     grid-area: cardResumen;
 }
 
@@ -75,4 +76,15 @@ h1{
 
 .btn{
     background-color: #f8bbd0;
+    font-weight: bold;
+}
+
+.collapsible-header{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.collapsible-body{
+    font-size: larger;
+    margin-left: 20px;
 }
