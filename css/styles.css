@@ -124,6 +124,18 @@
   margin-right: 40px;
 }
 
+.carouselAvales {
+  margin: 0px;
+}
+
+.carousel-item {
+  margin-bottom: 0px;
+}
+
+.carouselAvales {
+  height: 250px;
+}
+
 .card {
   padding: 10px;
   width: 300px;
@@ -290,6 +302,47 @@ h5 {
 .input-field {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.iconsGrid {
+  margin: 10px;
+  width: 100%;
+}
+
+.iconSection {
+  display: flex;
+}
+
+.iconText {
+  display: block;
+}
+
+.iconTitle {
+  margin: 0px;
+}
+
+.iconIcon {
+  color: pink;
+  font-size: 45px;
+}
+
+.iconoPais {
+  width: 70px;
+  height: 70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.iconosPaises {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.sectionPaises {
+  margin: 25px;
 }
 
 * {
