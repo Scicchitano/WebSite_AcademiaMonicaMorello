@@ -1,10 +1,13 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
+});
 
-  // Or with jQuery
+// Or with jQuery
 
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
+$(document).ready(function(){
+  $('.modal').modal();
+});
+        
