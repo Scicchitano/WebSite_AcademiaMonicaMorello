@@ -227,6 +227,11 @@ h1 {
   align-content: flex-start;
 }
 
+.Cursostipo {
+  padding: 10px;
+  margin: 10px;
+}
+
 .page-footer {
   background-color: rgb(183, 163, 177);
   justify-content: center;
