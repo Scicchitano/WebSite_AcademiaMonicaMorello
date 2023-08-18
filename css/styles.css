@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .titulo {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: bolder;
@@ -16,7 +17,7 @@
 }
 
 .navGeneral {
-  background-color: rgb(183, 163, 177);
+  background-color: pink;
 }
 
 .titleMenu {
@@ -316,10 +317,13 @@ h5 {
 
 .iconsGrid {
   margin: 10px;
+  padding: 25px;
   width: 100%;
+  max-width: 100%;
 }
 
 .iconSection {
+  margin-top: 25px;
   display: flex;
 }
 
@@ -353,6 +357,74 @@ h5 {
 
 .sectionPaises {
   margin: 25px;
+}
+
+.sectionStaff {
+  margin: 25px;
+}
+
+.containerQuienesSomos {
+  margin: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contenidoQuienesSomos {
+  display: flex;
+}
+
+.cardStaff {
+  display: flex;
+  width: 75%;
+}
+
+/*.cardStaffDueña{
+    background-color:rgb(241, 227, 152);
+}*/
+.containerStaffCards {
+  display: flex;
+  justify-content: center;
+}
+
+.cardStaff:hover {
+  background-color: pink;
+  scale: 110%;
+}
+.cardStaff:hover .cardTituloStaff {
+  color: white;
+}
+
+.imagenCardStaff {
+  width: 120px;
+}
+
+.cardTituloStaff {
+  color: pink;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  justify-items: center;
+}
+
+.cardNombreStaff {
+  width: 75%;
+  justify-content: end;
+}
+
+.cardPuestoStaff {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  width: 25%;
+  justify-self: end;
+}
+
+.cardStaffBody {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  justify-content: center;
 }
 
 * {
