@@ -1,0 +1,21 @@
+.modalForm {
+  margin: 10px;
+  padding: 10px;
+}
+
+.MensajeModal {
+  width: 400px;
+  height: 5px;
+}
+
+.input-field {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modalPreInscripcion {
+  padding: 20px;
+  text-align: start;
+}
+
+/*# sourceMappingURL=modal.css.map */

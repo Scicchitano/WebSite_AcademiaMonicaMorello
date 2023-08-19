@@ -1,0 +1,20 @@
+.sectionStaff {
+  margin: 25px;
+}
+
+.containerQuienesSomos {
+  margin: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contenidoQuienesSomos {
+  display: flex;
+  text-align: center;
+  font-size: medium;
+  margin: 15px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=nosotros.css.map */
