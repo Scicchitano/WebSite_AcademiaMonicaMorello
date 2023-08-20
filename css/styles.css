@@ -144,9 +144,11 @@
 }
 
 .card-title {
-  display: flex;
   font-size: 20px;
   font-weight: bolder;
+  margin: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .tarjetasCursos {
@@ -378,6 +380,26 @@ h5 {
   padding: 15px;
 }
 
+.cardQuienesSomos {
+  width: 100%;
+}
+
+.imagenCardQuienesSomos {
+  width: 550px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.cardTituloQuienesSomos {
+  display: flex;
+  justify-content: center;
+  color: pink;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
 .cardStaff {
   display: flex;
   width: 75%;
@@ -413,14 +435,18 @@ h5 {
 }
 
 .cardNombreStaff {
-  width: 75%;
+  width: 50%;
+  justify-self: end;
+  justify-items: end;
   justify-content: end;
 }
 
 .cardPuestoStaff {
   color: black;
   font-family: "Times New Roman", Times, serif;
-  width: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: end;
   justify-self: end;
 }
 
@@ -429,6 +455,24 @@ h5 {
   width: 100%;
   display: block;
   justify-content: center;
+}
+
+.floating-button {
+  position: fixed;
+  width: 1px;
+  bottom: 10px;
+  z-index: 9999;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.floating-button:hover {
+  width: 300px;
+}
+
+.whatsapp-button {
+  bottom: 1px;
 }
 
 * {

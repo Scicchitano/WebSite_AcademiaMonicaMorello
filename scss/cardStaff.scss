@@ -37,14 +37,18 @@
 
 
 .cardNombreStaff{
-    width: 75%;
+    width: 50%;
+    justify-self: end;
+    justify-items: end;
     justify-content: end;
 }
 
 .cardPuestoStaff{
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    width: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
     justify-self: end;
 }
 .cardStaffBody{

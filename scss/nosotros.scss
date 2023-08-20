@@ -16,6 +16,23 @@
     margin: 15px;
     padding: 15px;
 }
-.nosotrosTexto{
 
+.cardQuienesSomos{
+    width: 100%;
+}
+
+.imagenCardQuienesSomos{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.cardTituloQuienesSomos{
+    display: flex;
+    justify-content: center;
+    color: pink;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 15px;
 }
