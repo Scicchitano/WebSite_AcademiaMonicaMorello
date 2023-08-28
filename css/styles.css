@@ -549,14 +549,20 @@ html {
 
 
 .cardProductos{
-  height: 700px
+  height: 670px
 }
 
 .card-content{
   height: 70px;
 }
 
+.card .card-content {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .card-body{
+  margin: 0px;
   height: 70px;
 }
 

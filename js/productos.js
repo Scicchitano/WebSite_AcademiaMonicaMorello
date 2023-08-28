@@ -29,3 +29,6 @@ catalogoButton.addEventListener("mouseover",abrirCatalogo)
 catalogoButton.addEventListener("mouseout",cerrarCatalogo)
 
 catalogoButton.addEventListener("click",descargarCatalogo)
+
+
+
