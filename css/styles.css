@@ -533,3 +533,33 @@ html {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+.containerPartner{
+  display: inline-block;
+  width: 100%;
+  justify-content: center !important;
+  justify-items: center;
+}
+
+
+.itemPartner{
+  margin: 10px;
+}
+
+
+.cardProductos{
+  height: 700px
+}
+
+.card-content{
+  height: 70px;
+}
+
+.card-body{
+  height: 70px;
+}
+.botonVerMas{
+  display: flex;
+  align-self: end;
+}
