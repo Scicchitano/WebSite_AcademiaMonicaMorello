@@ -559,6 +559,10 @@ html {
 .card-body{
   height: 70px;
 }
+
+.card .card-title {
+  font-weight: bold;
+}
 .botonVerMas{
   display: flex;
   align-self: end;
