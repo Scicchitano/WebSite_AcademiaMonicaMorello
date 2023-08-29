@@ -573,3 +573,19 @@ html {
   display: flex;
   align-self: end;
 }
+
+
+
+/* Estilos CSS para el carrito */
+#cart {
+  border-collapse: collapse;
+  width: 100%;
+}
+#cart th, #cart td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+#total {
+  font-weight: bold;
+}

@@ -20,6 +20,7 @@ function descargarCatalogo(){
     console.log("DESCARGAR");
 }
 
+
 let catalogoButton = document.getElementById("catalogoCompleto");
 
 catalogoButton.style.fontSize = "30px";
@@ -32,3 +33,45 @@ catalogoButton.addEventListener("click",descargarCatalogo)
 
 
 
+
+
+
+function seleccionarCantidad(index){
+    const elem = document.getElementById('modal');
+    const instance = M.Modal.init(elem);
+    const divElement = document.createElement("div");
+    divElement.classList = "modal-content";
+    elem.appendChild(divElement);
+
+    console.log("index = " + index);
+    console.log(tituloCardElemento[index].innerText);
+    
+    instance.open();
+    
+}
+
+
+
+function addCantidad() {
+    console.log("Agregar");
+}
+
+let solicitarElemento = document.getElementsByClassName("botonSolicitar");
+
+let tituloCardElemento = document.getElementsByClassName("card-title");
+
+
+console.log(solicitarElemento[0].innerText);
+
+
+for (let index = 0; index < solicitarElemento.length; index++) {
+    solicitarElemento[index].addEventListener("click",function() {
+        seleccionarCantidad(index);
+    }, false);
+}
+
+
+const submitElement = document.getElementById("btnSubmit");
+
+
+submitElement.addEventListener("click", addCantidad)
