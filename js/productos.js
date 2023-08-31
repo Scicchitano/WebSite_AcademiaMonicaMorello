@@ -113,8 +113,29 @@ function modalCarrito() {
   const instance = M.Modal.init(elem);
   const divElement = document.createElement("div");
   divElement.classList = "modal";
-  divElement.innerHTML = ""
-  
+  const bodyElement = document.getElementById("bodyCarrito");
+
+  // Obtener los productos almacenados en localStorage
+  const productosGuardados = JSON.parse(localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS)) || [];
+
+  console.log(productosGuardados);
+  // Iterar sobre los productos utilizando forEach
+  productosGuardados.items.forEach(producto => {
+    const newRow = document.createElement("tr");
+    bodyElement.appendChild(newRow);
+
+    const newProductElement = document.createElement("td");
+    newProductElement.innerText = producto.nombre;
+    newRow.appendChild(newProductElement);
+
+    const newCantidadElement = document.createElement("td");
+    newCantidadElement.innerText = producto.cantidad;
+    newRow.appendChild(newCantidadElement);
+
+
+   console.log(`Nombre: ${producto.nombre}, Precio: $${producto.cantidad}`);
+   // Puedes hacer lo que quieras con cada producto aquí
+  });
 
   instance.open();
 }
