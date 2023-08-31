@@ -68,6 +68,7 @@
               <li><a class="titleMenu" href="Cursos/TodosCursos.html">Cursos</a></li>
               <li><a class="titleMenu" href="../paginas/productos.html">Productos</a></li>
               <li><a class="titleMenu" href="../paginas/Nosotros.html">Nosotros</a></li>
+              <li><a class="titleMenu" id="botonCarrito"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
           </div>
         </nav>
@@ -80,28 +81,23 @@
       <h2>Input Form</h2>
       <form id="input-form">
           <div class="input-field">
-              <input type="text" id="name" class="validate">
-              <label for="name">Name</label>
+              <input type="text" id="inputCantidadProductos" class="validate">
+              <label for="inputCantidadProductos">Cantidad</label>
           </div>
-          <button class="btn waves-effect waves-light" id="btnSubmit" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
+          <button id="btnSubmit" >Submit
           </button>
       </form>
   </div>
   </div>
 
-  <h1>Carrito de Compras</h1>
-  <table id="cart">
-    <tr>
-        <th>Producto</th>
-        <th>Precio</th>
-        <th>Cantidad</th>
-        <th>Subtotal</th>
-        <th>Eliminar</th>
-    </tr>
-  </table>
-  <p id="total">Total: $0</p>
-  <button id="checkout">Pagar</button>
+
+
+  <div id="modalCarrito" class="modal">
+    aca iria la tabla
+  </div>
+  </div>
+
+  
 
   <main>
     <div class="mt-3 ms-4 d-none d-lg-block Cursostipo">
@@ -141,7 +137,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar" >SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -182,7 +178,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar" >SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -219,7 +215,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -263,7 +259,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -312,7 +308,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -354,7 +350,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -391,7 +387,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -435,7 +431,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -485,7 +481,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -526,7 +522,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -563,7 +559,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -607,7 +603,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -657,7 +653,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -698,7 +694,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -735,7 +731,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -783,7 +779,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -833,7 +829,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -874,7 +870,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -911,7 +907,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -955,7 +951,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1017,7 +1013,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1058,7 +1054,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1095,7 +1091,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1139,7 +1135,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1189,7 +1185,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1230,7 +1226,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1267,7 +1263,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1311,7 +1307,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1361,7 +1357,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1402,7 +1398,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1439,7 +1435,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1483,7 +1479,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1533,7 +1529,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1574,7 +1570,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1611,7 +1607,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1655,7 +1651,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1705,7 +1701,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1746,7 +1742,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1783,7 +1779,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1827,7 +1823,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1873,7 +1869,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="https://wa.me/1234567890/?Quiero%20saber">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1914,7 +1910,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1951,7 +1947,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
@@ -1995,7 +1991,7 @@
               </li>
             </ul>
   
-            <a class="waves-effect waves-light btn botonVerMas" href="Aparatologia.html">SOLICITAR</a>
+            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
   
   
           </div>
