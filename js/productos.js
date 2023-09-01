@@ -142,7 +142,27 @@ carritoElement.addEventListener("click", modalCarrito);
 /*                 DATOS JSON                    */
 
 function showData(json) {
-  console.log("JSON = " + json.Seccion);
+  console.log("JSON = " + json);
+  console.log(json.length);
+  productosSeccionElement = document.getElementById("productosSeccion");
+  json.forEach((post) => {
+    console.log(post.categoria);
+    post.items.forEach((item) => {
+      const newCardElement = document.createElement("div");
+      newCardElement.className("col");
+      newCardElement.innerHTML = `
+      <div class="card z-depth-4 rounded cardProductos">
+            <div class="card-image">
+              <img src="$(item)">
+            </div>
+      </div>
+
+      `
+      productosSeccionElement.appendChild(newCardElement)
+
+      console.log(item.photo);
+    });
+  });
 }
 
 async function fetchData() {
@@ -150,11 +170,7 @@ async function fetchData() {
     let jsonData = {};
     fetch("../json/dataProductos.json")
       .then((response) => response.json())
-      .then((json) => {
-        json.forEach((post) => {
-          console.log(post);
-        });
-      });
+      .then((json) => showData(json));
   } catch (error) {
     console.error("Error fetching JSON data:", error);
   }

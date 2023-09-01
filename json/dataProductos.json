@@ -1,18 +1,52 @@
-[{
-    "photo": "photo1.jpg",
-    "title": "Title 1",
-    "content": "Content 1",
-    "beneficios": "Uso Diario",
-    "modoUso": "",
-    "indicaciones": "",
-    "contraIndicaciones": ""
-},
-{
-    "photo": "photo1.jpg",
-    "title": "Title 1",
-    "content": "Content 1",
-    "beneficios": "Uso Diario",
-    "modoUso": "",
-    "indicaciones": "",
-    "contraIndicaciones": ""
-}]
+[
+    {
+        "categoria": "Faciales",
+        "items": [
+            {
+                "photo": "photo1.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            },
+            {
+                "photo": "photo2.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            }
+        
+        ]
+        
+    },
+    {
+        "categoria": "Corporales",
+        "items": [
+            {
+                "photo": "photo3.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            },
+            {
+                "photo": "photo4.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            }
+        
+        ]
+        
+    }
+]
