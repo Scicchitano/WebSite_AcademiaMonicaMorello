@@ -2,9 +2,6 @@ const CLAVE_PRODUCTOS_CARRITO_LS = "ProductosCarrito";
 
 let productoAUX = "";
 
-
-
-
 async function abrirCatalogo() {
   catalogoButton.style.fontSize = "15px";
   await new Promise((resolve) => setTimeout(resolve, 180)); // Delays for 2000 milliseconds (2 seconds)
@@ -36,32 +33,32 @@ catalogoButton.addEventListener("mouseout", cerrarCatalogo);
 
 catalogoButton.addEventListener("click", descargarCatalogo);
 
-
-
-function addProductoLS(producto,cantidad){
+function addProductoLS(producto, cantidad) {
   const existingDataString = localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS);
   let existingData = {};
 
   if (existingDataString) {
-      existingData = JSON.parse(existingDataString);
+    existingData = JSON.parse(existingDataString);
   }
 
   // Step 2: Append new data to the existing data
   const newData = {
     nombre: producto,
-    cantidad: cantidad
+    cantidad: cantidad,
   };
 
   // Assuming you want to use an array to store multiple items
   if (!existingData.items) {
-      existingData.items = [];
+    existingData.items = [];
   }
 
   existingData.items.push(newData);
 
   // Step 3: Convert back to JSON and store in localStorage
-  localStorage.setItem(CLAVE_PRODUCTOS_CARRITO_LS, JSON.stringify(existingData));
-
+  localStorage.setItem(
+    CLAVE_PRODUCTOS_CARRITO_LS,
+    JSON.stringify(existingData)
+  );
 }
 
 function seleccionarCantidad(index) {
@@ -71,16 +68,14 @@ function seleccionarCantidad(index) {
   divElement.classList = "modal-content";
   elem.appendChild(divElement);
 
-  
   productoAUX = tituloCardElemento[index].innerText;
-  
 
   instance.open();
 }
 
 function addCantidad() {
-    const inputElement = document.getElementById("inputCantidadProductos");
-    addProductoLS(productoAUX,inputElement.value);
+  const inputElement = document.getElementById("inputCantidadProductos");
+  addProductoLS(productoAUX, inputElement.value);
 }
 
 let solicitarElemento = document.getElementsByClassName("botonSolicitar");
@@ -103,10 +98,7 @@ const submitElement = document.getElementById("btnSubmit");
 
 submitElement.addEventListener("click", addCantidad);
 
-
-
 /*                             CARRITO                               */
-
 
 function modalCarrito() {
   const elem = document.getElementById("modalCarrito");
@@ -114,13 +106,15 @@ function modalCarrito() {
   const divElement = document.createElement("div");
   divElement.classList = "modal";
   const bodyElement = document.getElementById("bodyCarrito");
+  bodyElement.innerHTML = "";
 
   // Obtener los productos almacenados en localStorage
-  const productosGuardados = JSON.parse(localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS)) || [];
+  const productosGuardados =
+    JSON.parse(localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS)) || [];
 
   console.log(productosGuardados);
   // Iterar sobre los productos utilizando forEach
-  productosGuardados.items.forEach(producto => {
+  productosGuardados.items.forEach((producto) => {
     const newRow = document.createElement("tr");
     bodyElement.appendChild(newRow);
 
@@ -132,9 +126,10 @@ function modalCarrito() {
     newCantidadElement.innerText = producto.cantidad;
     newRow.appendChild(newCantidadElement);
 
-
-   console.log(`Nombre: ${producto.nombre}, Precio: $${producto.cantidad}`);
-   // Puedes hacer lo que quieras con cada producto aquí
+    console.log(
+      `Producto: ${producto.nombre}, Cantidad: $${producto.cantidad}`
+    );
+    // Puedes hacer lo que quieras con cada producto aquí
   });
 
   instance.open();
@@ -142,6 +137,30 @@ function modalCarrito() {
 
 let carritoElement = document.getElementById("botonCarrito");
 
-
-
 carritoElement.addEventListener("click", modalCarrito);
+
+/*                 DATOS JSON                    */
+
+function showData(json) {
+  console.log("JSON = " + json.Seccion);
+}
+
+async function fetchData() {
+  try {
+    let jsonData = {};
+    fetch("../json/dataProductos.json")
+      .then((response) => response.json())
+      .then((json) => {
+        json.forEach((post) => {
+          console.log(post);
+        });
+      });
+  } catch (error) {
+    console.error("Error fetching JSON data:", error);
+  }
+}
+
+// Call the fetchData function to load and display the data
+fetchData();
+
+let seccionProductosElement = document.getElementById("seccionProductos");
