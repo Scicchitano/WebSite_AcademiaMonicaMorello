@@ -98,7 +98,24 @@ const submitElement = document.getElementById("btnSubmit");
 
 submitElement.addEventListener("click", addCantidad);
 
+
+
+
+
+
+
+
+
+
+
+
 /*                             CARRITO                               */
+
+
+
+function eliminarProducto(producto){
+  console.log(producto);
+}
 
 function modalCarrito() {
   const elem = document.getElementById("modalCarrito");
@@ -119,12 +136,34 @@ function modalCarrito() {
     bodyElement.appendChild(newRow);
 
     const newProductElement = document.createElement("td");
+    newProductElement.classList = "textoTablaCarrito";
     newProductElement.innerText = producto.nombre;
     newRow.appendChild(newProductElement);
 
     const newCantidadElement = document.createElement("td");
+    newCantidadElement.classList = "textoTablaCarrito";
     newCantidadElement.innerText = producto.cantidad;
     newRow.appendChild(newCantidadElement);
+
+    const newAccionElement = document.createElement("td");
+    const botonEliminarElement = document.createElement("button");
+    newAccionElement.appendChild(botonEliminarElement);
+
+    botonEliminarElement.classList = "btn waves-effect waves-light";
+    botonEliminarElement.addEventListener("click",function () {
+      eliminarProducto(producto.nombre);
+    },
+    false);
+
+
+    const iconEliminarElement = document.createElement("i");
+    iconEliminarElement.classList = "material-icons";
+    iconEliminarElement.innerHTML = "delete";
+
+    botonEliminarElement.appendChild(iconEliminarElement);
+    newRow.appendChild(newAccionElement);
+
+
 
     console.log(
       `Producto: ${producto.nombre}, Cantidad: $${producto.cantidad}`
@@ -138,6 +177,15 @@ function modalCarrito() {
 let carritoElement = document.getElementById("botonCarrito");
 
 carritoElement.addEventListener("click", modalCarrito);
+
+
+
+
+
+
+
+
+
 
 /*                 DATOS JSON                    */
 
