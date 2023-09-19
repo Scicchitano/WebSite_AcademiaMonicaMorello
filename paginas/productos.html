@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="../multimedia/LOGOTTH.jpg">
+  <link rel="shortcut icon" href="../multimedia/Logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--TITULO-->
 
-    <title>THE TRUE HELL CAPS</title>
+    <title>Academia Monica Morello</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -62,9 +62,11 @@
         <!-- Dropdown Structure -->
         <nav class="navGeneral">
           <div class="nav-wrapper">
-            <img src="../multimedia\Logo.png" alt="" class="logo">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../multimedia/Logo.png" alt="Logo" width="60" height="60">
+            </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down menuHeader">
-              <li><a class="titleMenu" href="../index.html">Inicio</a></li>
+             
               <li><a class="titleMenu" href="Cursos/TodosCursos.html">Cursos</a></li>
               <li><a class="titleMenu" href="../paginas/productos.html">Productos</a></li>
               <li><a class="titleMenu" href="../paginas/Nosotros.html">Nosotros</a></li>
@@ -76,15 +78,15 @@
 
   </header>
 
-  <div id="modal" class="modal">
-    <div class="container">
-      <h2>Input Form</h2>
+  <div id="modal" class="modal modalAgregarProducto">
+    <div class="container containerAgregarProducto">
+      <h2>Agregar producto</h2>
       <form id="input-form">
           <div class="input-field">
-              <input type="text" id="inputCantidadProductos" class="validate">
+              <input type="number" min="1" max="100" id="inputCantidadProductos" class="validate">
               <label for="inputCantidadProductos">Cantidad</label>
           </div>
-          <button id="btnSubmit" >Submit
+          <button class="waves-effect waves-light btn botonVerMas btnAgregarProducto" id="btnSubmit" ><i class="material-icons iconAgregarProducto">shopping_cart</i>Agregar al carrito
           </button>
       </form>
   </div>
@@ -104,14 +106,16 @@
 
       <tbody id="bodyCarrito">
         <tr>
-          <td>Eclair</td>
-          <td>$0.87</td>
+          <td>emulsion</td>
+          <td>8</td>
+          <td><button></button></td>
         </tr>
+        
         
       </tbody>
     </table>
 
-    <a  class="modal-trigger waves-effect waves-light btn botonCarrito" href="Aparatologia.html" type="submit">Pedir</a>
+    <a  class="modal-trigger waves-effect waves-light btn botonCarrito" id="btnPedir" target="_blank" type="submit">Pedir</a>
 
   </div>
   </div>
@@ -990,1032 +994,15 @@
   
   
   
-      <div class="mt-3 ms-4 d-none d-lg-block Cursostipo">
+      <div class="Cursostipo">
         <h1 class="titulosCategoriaCurso">productos corporales</h1>
       </div>
       <hr class="lineaSeparadora" >
     
       
-      <div class="row tarjetasCursos " id="productosSeccion">
+      <div class="" id="productosSeccion">
   
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="https://eshop.jezmin.com.ar/2049-large_default/tierras-del-volcan-crema-termal-reductora-anticelulitica-x-250-g.jpg">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Tierras del Volcán Crema Termal Reductora Anticelulítica x 250 g</h5>
-            </div>
-            <div class="card-content ">
-              <p>Crema Termal Reductora Anticelulítica
-
-                Con cafeína, Centella Asiática, Ginkgo Biloba, Extracto de Hiedra y Extracto de Uvas Malbec.
-                
-                Ideal para masajes reductores. Repara las fibras elásticas. Acción depuradora, reestructuradora, anticelulítica</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Tierras del Volcán Máscara Termal Reafirmante Corporal x 500 g</h5>
-            </div>
-            <div class="card-content ">
-              <p>TRATAMIENTO TENSOR Y TONIFICANTE / MEJORA ELASTICIDAD Y REGENERACIÓN CELULAR / ELIMINACIÓN DE TOXINAS</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="https://eshop.jezmin.com.ar/4002-large_default/tierras-del-volcan-crema-termal-autobronceante-x-150-g.jpg">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Tierras del Volcán Crema Termal Autobronceante x 150 g</h5>
-            </div>
-            <div class="card-content ">
-              <p>BRONCEADO SIN SOL / ULTRA-HIDRATANTE / USO FACIAL Y CORPORAL / FÁCIL APLICACIÓN</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
         
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      </div>
-  
-  
-  
-      <div class="row tarjetasCursos ">
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Crema pulidora</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
-        
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      </div>
-  
-  
-  
-      <div class="row tarjetasCursos ">
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Crema pulidora</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
-        
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      </div>
-  
-  
-  
-      <div class="row tarjetasCursos ">
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Crema pulidora</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
-        
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      </div>
-  
-  
-  
-      <div class="row tarjetasCursos ">
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Crema pulidora</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
-        
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      </div><div class="row tarjetasCursos ">
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Crema pulidora</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Beneficios</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Modo de uso</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contra-indicaciones</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-
-
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
-
-        
-  
-  
-  
-  
-  
-  
-        <div class="col">
-          <div class="card z-depth-4 rounded cardProductos">
-            <div class="card-image">
-              <img src="../multimedia/Productos/Crema_Pulidora.png">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Curso de Aparatologia</h5>
-            </div>
-            <div class="card-content ">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus animi, quasi voluptas mollitia cumque a quis nemo deleniti? At, quae earum nesciunt excepturi optio molestias nisi veniam possimus ipsam!</p>
-            </div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">access_time</i>Duración</div>
-                <div class="collapsible-body propiedadesTexto"><span>8 meses</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">extension</i>Dificultad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Media</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">content_paste</i>Modalidad</div>
-                <div class="collapsible-body propiedadesTexto"><span>Presencial</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header propiedades"><i class="material-icons">school</i>Contenidos minimos</div>
-                <div class="collapsible-body propiedadesTexto"><span>Ninguno</span></div>
-              </li>
-            </ul>
-  
-            <a class="waves-effect waves-light btn botonVerMas botonSolicitar">SOLICITAR</a>
-  
-  
-          </div>
-        </div>
-  
   
   
   
@@ -2049,7 +1036,7 @@
       <h5 class="col s4">Contactese con nosotros:</h5>
       <div class="col s8 footerLogoRed">
 
-        <a href="https://www.facebook.com/thetruehellcaps/" class="logoRed link-secondary ">
+        <a href="https://www.facebook.com/academiamonicamorello" class="logoRed link-secondary ">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
           </svg>
@@ -2061,7 +1048,7 @@
           </svg>
         </a>
 
-        <a href="https://www.instagram.com/thetruehellcaps/?hl=es" class="logoRed link-secondary ">
+        <a href="https://www.instagram.com/academiamonicamorello/?hl=es-la" class="logoRed link-secondary ">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
           </svg>
@@ -2079,7 +1066,7 @@
         <h5 class="white-text">Links útiles</h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Descargar reglamento</a></li>
-          <li><a class="grey-text text-lighten-3" href="">Preguntas frecuentes</a></li>
+          <li><a class="grey-text text-lighten-3" href="preguntas.html">Preguntas frecuentes</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Historia</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
         </ul>
@@ -2115,7 +1102,7 @@
 </footer>
   <!-- Footer -->
 
-  <a href="https://wa.me/1234567890/?Hola%20Arianita" class="whatsapp-button">
+  <a href="https://api.whatsapp.com/send?phone=5491164449898&text=Hola" target="_blank" class="whatsapp-button">
     <!--<h1>HABLAME</h1>-->
     <img src="../multimedia/whatsapp.svg" alt="WhatsApp Icon" width="90" height="90">
   </a>
@@ -2123,26 +1110,15 @@
   <a class="waves-effect waves-light btn botonVerMas floating-button"  id="catalogoCompleto">+</a>
 
   <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../js/productos.js"></script>
   <script type="text/javascript" src="../js/materialize.min.js"></script>
   <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
   <script src="../js/owl.carousel.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="../js/index.js"></script>
   <script type="text/javascript" src="../js/TodosCursos.js"></script>
-  <script type="text/javascript" src="../js/productos.js"></script>
 
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(elems);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function(){
-      $('.modal').modal();
-    });
-  </script>
+  
 </body>
 </html>

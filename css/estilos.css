@@ -1,131 +1,603 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box}
-html{
-    font-size: 62.5%
+@charset "UTF-8";
+.titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: bolder;
+  /*display: grid;*/
+  grid-area: titulo;
+  margin: 0;
+  /*justify-content: center;
+  align-content: center;*/
+  font-size: 45px;
 }
 
-.headerProductos{
-    background-color: rgba(255, 199, 209, 0.527);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "casitaInicio titulo titulo boton";
-    justify-items: center;
-    align-items: center;
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
 }
 
-.boton_header{
-    height: 25px;
-    width: 100px;
-    grid-area: boton;
-    justify-self: right;
-
-
+.navGeneral {
+  background-color: pink;
 }
 
-.casitaInicio{
-    grid-area: casitaInicio;
+.titleMenu {
+  color: black;
+  font-size: 18px;
 }
 
-.titulo{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: bolder;
-    /*display: grid;*/
-    grid-area: titulo;
-    margin: 0;
-    /*justify-content: center;
-    align-content: center;*/
-    font-size: 45px;
+.menuHeader {
+  justify-content: center;
 }
 
-.nav-item{
-    font-size: 20px;
-    justify-content: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+.headerProductos {
+  background-color: rgb(41, 30, 37);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "casitaInicio titulo titulo boton";
+  justify-items: center;
+  align-items: center;
 }
 
+.nav-link {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
 
+.dropdown-menu {
+  padding-right: 80px;
+}
 
+.dropdown-item {
+  margin-left: 35px;
+  margin-right: 55px;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  font-weight: bolder;
+  color: rgba(116, 103, 105, 0.527);
+  background-color: white;
+}
+
+.avales {
+  background-color: white;
+}
+
+.boton_header {
+  display: grid;
+  height: 25px;
+  width: 1000px;
+  grid-area: boton;
+  justify-self: center;
+}
+
+.casitaInicio {
+  grid-area: casitaInicio;
+}
+
+.nav-item {
+  font-size: 20px;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.textoCentrado {
+  display: inline-block;
+  font-size: 50px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.textoGris {
+  color: rgb(89, 97, 97);
+}
+
+.form {
+  margin: auto;
+  width: 640px;
+  padding: 50px;
+  font-family: "Avenir", sans-serif;
+  color: #33475b;
+}
+
+.tituloCursos {
+  font-size: 25px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.logos {
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.carouselAvales {
+  margin: 0px;
+}
+
+.carousel-item {
+  margin-bottom: 0px;
+}
+
+.carouselAvales {
+  height: 250px;
+}
+
+.card {
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.tarjetasCursos {
+  display: flex;
+  justify-content: center;
+}
+
+.card .card-content {
+  display: flex;
+  padding: 1px;
+  margin: 20px;
+}
+
+.btnModalRight {
+  display: flex;
+  justify-content: center;
+}
+
+.botonVerMas {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: inline;
+}
+
+.lineaSeparadora {
+  margin: 10px;
+}
+
+.titulosCategoriaCurso {
+  margin: 10px;
+}
+
+.tarjetasGrid {
+  display: grid;
+  border: none;
+  margin: 10px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "cardResumen cardGeneral";
+}
+
+.cardResumen {
+  border: #f8bbd0;
+  grid-area: cardResumen;
+}
+
+.cardCursoGeneral {
+  width: auto;
+  grid-area: cardGeneral;
+}
+
+.card-body {
+  justify-self: end;
+}
+
+.btn {
+  background-color: #f8bbd0;
+  font-weight: bold;
+}
+
+.collapsible-header {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.collapsible-body {
+  font-size: larger;
+  margin-left: 20px;
+}
+
+.cardProductos {
+  height: 670px;
+}
+
+.card-content {
+  height: 70px;
+}
+
+.card .card-content {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-body {
+  margin: 0px;
+  height: 70px;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+.botonVerMas {
+  display: flex;
+  align-self: end;
+}
+
+.card-contentCursoGeneral {
+  height: auto;
+}
+
+.Tarjetas {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.Cursostipo {
+  padding: 10px;
+  margin: 10px;
+}
+
+.page-footer {
+  background-color: rgba(255, 201, 253, 0.526);
+  justify-content: center;
+  justify-items: center;
+  padding: 0px;
+}
+
+.colFooter {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.footerTitulo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerRedes {
+  display: flex;
+}
+
+.footerLogoRed {
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  align-content: end;
+}
+
+h5 {
+  margin: 0px;
+}
+
+.rowTituloFooter {
+  padding-top: 10px;
+}
+
+.logosFooter {
+  justify-content: end;
+  display: flex;
+  justify-self: end;
+  justify-items: end;
+}
+
+.containerFooter {
+  width: 90%;
+}
+
+.rowTituloFooter {
+  margin: 0px;
+}
+
+.lineaSeparadoraFooter {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.logoRed {
+  margin-right: 8px;
+  color: white;
+}
+
+.modalForm {
+  margin: 10px;
+  padding: 10px;
+}
+
+.MensajeModal {
+  width: 400px;
+  height: 5px;
+}
+
+.input-field {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modalPreInscripcion {
+  padding: 20px;
+  text-align: start;
+}
+
+.modalAgregarProducto {
+  padding: 10px;
+}
+
+.btnAgregarProducto {
+  display: inline;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#inputCantidadProductos {
+  margin-top: 5px;
+}
+
+.iconAgregarProducto {
+  margin-right: 10px;
+}
+
+.iconsGrid {
+  margin: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.iconSection {
+  margin-top: 25px;
+  display: flex;
+}
+
+.iconText {
+  display: block;
+}
+
+.iconTitle {
+  margin: 0px;
+}
+
+.iconIcon {
+  color: pink;
+  font-size: 45px;
+}
+
+.iconoPais {
+  width: 70px;
+  height: 70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.iconosPaises {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.sectionPaises {
+  margin: 25px;
+}
+
+.sectionStaff {
+  margin: 25px;
+}
+
+.containerQuienesSomos {
+  margin: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contenidoQuienesSomos {
+  display: flex;
+  text-align: center;
+  font-size: medium;
+  margin: 15px;
+  padding: 15px;
+}
+
+.cardQuienesSomos {
+  width: 100%;
+}
+
+.imagenCardQuienesSomos {
+  width: 550px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.cardTituloQuienesSomos {
+  display: flex;
+  justify-content: center;
+  color: pink;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.cardStaff {
+  display: flex;
+  width: 75%;
+}
+
+/*.cardStaffDueña{
+    background-color:rgb(241, 227, 152);
+}*/
+.containerStaffCards {
+  display: flex;
+  justify-content: center;
+}
+
+.cardStaff:hover {
+  background-color: pink;
+  scale: 110%;
+}
+.cardStaff:hover .cardTituloStaff {
+  color: white;
+}
+
+.imagenCardStaff {
+  width: 120px;
+}
+
+.cardTituloStaff {
+  color: pink;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  justify-items: center;
+}
+
+.cardNombreStaff {
+  width: 50%;
+  justify-self: end;
+  justify-items: end;
+  justify-content: end;
+}
+
+.cardPuestoStaff {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  justify-self: end;
+}
+
+.cardStaffBody {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.floating-button {
+  position: fixed;
+  width: 1px;
+  bottom: 10px;
+  z-index: 9999;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.floating-button:hover {
+  width: 300px;
+}
+
+.whatsapp-button {
+  bottom: 1px;
+}
+
+.botonCarrito {
+  display: inline;
+  width: 100%;
+}
+
+#modalCarrito {
+  padding: 10px;
+}
+
+.tituloTablaCarrito {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.textoTablaCarrito {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 @media screen and (max-width: 376px) {
-    .nav-item{
-        font-size: 15px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .form-floating-label{
-        font-size: 8.5px;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width: 517px) {
-    .titulo{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 516px) and (min-width: 321px) {
-    .titulo{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 320px){
-    .titulo{
-        font-size: 10px;
-    }
-    .nav-item{
-        font-size: 10px;
-    }
-}
-
-
-
-
-
-
-
-
-
-@font-face {
-    font-family: "fuentelocal";
-    src:
-     url(../fuentes/fuentelocal.ttf);
-}
-
-.lista-nav{
-    font-size: 50px;
-}
-
-.navbar-brand{
-    font-size: 25px;
-}
-.logo{
-    width: 300px;
-    height: 400px;
-}
-.pp1{
-    font-size: 20px;
-}
-.p1{
-  font-size:medium;  
-}
-
-
-.card{
-    margin: 30px;
-}
-
-.cirucloTalle{
-    background-color: blue;
-}
-
-#circuloColor:hover {
-    fill: blue;
+  .nav-item {
+    font-size: 15px;
   }
+}
+@media screen and (max-width: 768px) {
+  .form-floating-label {
+    font-size: 8.5px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 517px) {
+  .titulo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 516px) and (min-width: 321px) {
+  .titulo {
+    font-size: 20px;
+  }
+  .nav-item {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo {
+    font-size: 20px;
+  }
+  .nav-item {
+    font-size: 10px;
+  }
+  .object-fit-sm-contain {
+    width: 50px;
+    height: 50px;
+  }
+}
+@font-face {
+  font-family: "fuentelocal";
+  src: url(../fuentes/fuentelocal.ttf);
+}
+.lista-nav {
+  font-size: 50px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

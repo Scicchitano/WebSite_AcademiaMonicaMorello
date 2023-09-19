@@ -1,0 +1,17 @@
+.floating-button {
+  position: fixed;
+  width: 1px;
+  bottom: 10px;
+  z-index: 9999;
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.floating-button:hover {
+  width: 300px;
+}
+
+.whatsapp-button {
+  bottom: 1px;
+}/*# sourceMappingURL=general.css.map */

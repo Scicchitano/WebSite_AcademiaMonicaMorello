@@ -1,11 +1,10 @@
-
-.card{
+.card {
     padding: 10px;
     width: 300px;
-    border-radius : 10px;
+    border-radius: 10px;
 }
 
-.card-title{
+.card-title {
     font-size: 20px;
     font-weight: bolder;
     margin: 10px;
@@ -13,10 +12,7 @@
     margin-left: 0px;
 }
 
-
-
-
-.tarjetasCursos{
+.tarjetasCursos {
     display: flex;
     justify-content: center;
 }
@@ -27,31 +23,29 @@
     margin: 20px;
 }
 
-
-.btnModalRight{
+.btnModalRight {
     display: flex;
     justify-content: center;
 }
 
-.botonVerMas{
+.botonVerMas {
     display: flex;
     justify-content: center;
 }
 
-h1{
+h1 {
     display: inline;
 }
 
-
-.lineaSeparadora{
+.lineaSeparadora {
     margin: 10px;
 }
 
-.titulosCategoriaCurso{
+.titulosCategoriaCurso {
     margin: 10px;
 }
 
-.tarjetasGrid{
+.tarjetasGrid {
     display: grid;
     border: none;
     margin: 10px;
@@ -61,37 +55,62 @@ h1{
     grid-template-areas: "cardResumen cardGeneral";
 }
 
-.cardResumen{
+.cardResumen {
     border: #f8bbd0;
 
     grid-area: cardResumen;
 }
 
-.cardGeneral{
+.cardCursoGeneral {
     width: auto;
     grid-area: cardGeneral;
 }
 
-
-
-
-.card-body{
+.card-body {
     justify-self: end;
 }
 
-
-.btn{
+.btn {
     background-color: #f8bbd0;
     font-weight: bold;
 }
 
-.collapsible-header{
+.collapsible-header {
     font-size: larger;
     font-weight: bold;
 }
 
-.collapsible-body{
+.collapsible-body {
     font-size: larger;
     margin-left: 20px;
 }
 
+.cardProductos {
+    height: 670px;
+}
+
+.card-content {
+    height: 70px;
+}
+
+.card .card-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-body {
+    margin: 0px;
+    height: 70px;
+}
+
+.card .card-title {
+    font-weight: bold;
+}
+.botonVerMas {
+    display: flex;
+    align-self: end;
+}
+
+.card-contentCursoGeneral {
+    height: auto;
+}

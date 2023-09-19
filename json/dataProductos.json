@@ -3,7 +3,7 @@
         "categoria": "Faciales",
         "items": [
             {
-                "photo": "photo1.jpg",
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
                 "title": "Title 1",
                 "content": "Content 1",
                 "beneficios": "Uso Diario",
@@ -12,7 +12,7 @@
                 "contraIndicaciones": ""
             },
             {
-                "photo": "photo2.jpg",
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
                 "title": "Title 1",
                 "content": "Content 1",
                 "beneficios": "Uso Diario",
@@ -28,7 +28,7 @@
         "categoria": "Corporales",
         "items": [
             {
-                "photo": "photo3.jpg",
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
                 "title": "Title 1",
                 "content": "Content 1",
                 "beneficios": "Uso Diario",
@@ -37,7 +37,34 @@
                 "contraIndicaciones": ""
             },
             {
-                "photo": "photo4.jpg",
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            },
+            {
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            },
+            {
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
+                "title": "Title 1",
+                "content": "Content 1",
+                "beneficios": "Uso Diario",
+                "modoUso": "",
+                "indicaciones": "",
+                "contraIndicaciones": ""
+            },
+            {
+                "photo": "https://eshop.jezmin.com.ar/2059-large_default/tierras-del-volcan-mascara-termal-reafirmante-corporal-x-500-g.jpg",
                 "title": "Title 1",
                 "content": "Content 1",
                 "beneficios": "Uso Diario",

@@ -1,0 +1,11 @@
+.Tarjetas {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.Cursostipo {
+  padding: 10px;
+  margin: 10px;
+}/*# sourceMappingURL=main.css.map */

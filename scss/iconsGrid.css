@@ -1,0 +1,24 @@
+.iconsGrid {
+  margin: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.iconSection {
+  margin-top: 25px;
+  display: flex;
+}
+
+.iconText {
+  display: block;
+}
+
+.iconTitle {
+  margin: 0px;
+}
+
+.iconIcon {
+  color: pink;
+  font-size: 45px;
+}/*# sourceMappingURL=iconsGrid.css.map */

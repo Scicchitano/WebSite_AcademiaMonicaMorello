@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.cardStaff {
+  display: flex;
+  width: 75%;
+}
+
+/*.cardStaffDueña{
+    background-color:rgb(241, 227, 152);
+}*/
+.containerStaffCards {
+  display: flex;
+  justify-content: center;
+}
+
+.cardStaff:hover {
+  background-color: pink;
+  scale: 110%;
+}
+.cardStaff:hover .cardTituloStaff {
+  color: white;
+}
+
+.imagenCardStaff {
+  width: 120px;
+}
+
+.cardTituloStaff {
+  color: pink;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  display: flex;
+  justify-items: center;
+}
+
+.cardNombreStaff {
+  width: 50%;
+  justify-self: end;
+  justify-items: end;
+  justify-content: end;
+}
+
+.cardPuestoStaff {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  justify-self: end;
+}
+
+.cardStaffBody {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+}/*# sourceMappingURL=cardStaff.css.map */

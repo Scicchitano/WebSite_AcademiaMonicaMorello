@@ -29,7 +29,7 @@
 }
 
 .headerProductos{
-    background-color:rgb(183, 163, 177);
+    background-color:rgb(41, 30, 37);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr;
@@ -57,7 +57,7 @@
 
 .dropdown-item:hover {
     font-weight: bolder;
-    color: rgba(255, 199, 209, 0.527);
+    color: rgba(116, 103, 105, 0.527);
     background-color: white;
 }
 

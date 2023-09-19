@@ -1,0 +1,61 @@
+.page-footer {
+  background-color: rgb(183, 163, 177);
+  justify-content: center;
+  justify-items: center;
+  padding: 0px;
+}
+
+.colFooter {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.footerTitulo {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footerRedes {
+  display: flex;
+}
+
+.footerLogoRed {
+  display: flex;
+  justify-content: end;
+  justify-items: end;
+  align-content: end;
+}
+
+h5 {
+  margin: 0px;
+}
+
+.rowTituloFooter {
+  padding-top: 10px;
+}
+
+.logosFooter {
+  justify-content: end;
+  display: flex;
+  justify-self: end;
+  justify-items: end;
+}
+
+.containerFooter {
+  width: 90%;
+}
+
+.rowTituloFooter {
+  margin: 0px;
+}
+
+.lineaSeparadoraFooter {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.logoRed {
+  margin-right: 8px;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */
