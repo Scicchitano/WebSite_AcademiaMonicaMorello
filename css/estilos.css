@@ -328,6 +328,11 @@ h5 {
   color: white;
 }
 
+.tituloPreInscripcion {
+  display: flex !important;
+  justify-content: center !important;
+}
+
 .modalForm {
   margin: 10px;
   padding: 10px;
@@ -365,6 +370,22 @@ h5 {
 
 .iconAgregarProducto {
   margin-right: 10px;
+}
+
+#modalPreInscripcion {
+  padding: 30px;
+  margin: 30px;
+  width: 100px;
+}
+
+.textoPreInscripcion {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.modal.modal-fixed-footer {
+  padding: 0;
+  height: 60%;
 }
 
 .iconsGrid {

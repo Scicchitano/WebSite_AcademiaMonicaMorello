@@ -1,3 +1,7 @@
+.tituloPreInscripcion{
+    display: flex !important;
+    justify-content: center !important;
+}
 .modalForm{
     margin: 10px;
     padding: 10px;
@@ -38,4 +42,13 @@
     margin-right: 10px;
 }
 
+
+.textoPreInscripcion{
+    display: flex;
+    justify-content: center;
+    text-justify: center;
+    margin: 10px;
+    text-align: start;
+
+}
 

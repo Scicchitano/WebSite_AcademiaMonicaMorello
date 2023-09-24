@@ -30,7 +30,7 @@
 }
 
 .headerProductos {
-  background-color: rgb(183, 163, 177);
+  background-color: rgb(41, 30, 37);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -57,7 +57,7 @@
 
 .dropdown-item:hover {
   font-weight: bolder;
-  color: rgba(255, 199, 209, 0.527);
+  color: rgba(116, 103, 105, 0.527);
   background-color: white;
 }
 
@@ -267,7 +267,7 @@ h1 {
 }
 
 .page-footer {
-  background-color: rgb(183, 163, 177);
+  background-color: rgba(255, 201, 253, 0.526);
   justify-content: center;
   justify-items: center;
   padding: 0px;
@@ -328,6 +328,11 @@ h5 {
   color: white;
 }
 
+.tituloPreInscripcion {
+  display: flex !important;
+  justify-content: center !important;
+}
+
 .modalForm {
   margin: 10px;
   padding: 10px;
@@ -365,6 +370,14 @@ h5 {
 
 .iconAgregarProducto {
   margin-right: 10px;
+}
+
+.textoPreInscripcion {
+  display: flex;
+  justify-content: center;
+  text-justify: center;
+  margin: 10px;
+  text-align: start;
 }
 
 .iconsGrid {

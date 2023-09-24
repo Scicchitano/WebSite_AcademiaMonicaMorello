@@ -17,7 +17,7 @@ function showData(json) {
       const newCardElement = document.createElement("div");
       newCardElement.innerHTML = `
       
-        <div class="col">
+        <div class="col s3 center-align cardsJSON">
         <div class="card z-depth-4 rounded cardProductos">
         <div class="card-image">
         <img src="${item.photo}">
