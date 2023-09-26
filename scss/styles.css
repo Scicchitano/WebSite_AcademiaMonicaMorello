@@ -602,4 +602,17 @@ html {
 
 .navbar-brand {
   font-size: 25px;
+  
 }/*# sourceMappingURL=styles.css.map */
+
+
+
+@media screen and (max-width: 768px) {
+  .menuHeader {
+    display: none; /* Oculta la navegación en pantalla pequeña */
+  }
+
+  .sidenav-trigger {
+    display: block; /* Muestra el botón de hamburguesa en pantalla pequeña */
+  }
+}

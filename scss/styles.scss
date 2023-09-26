@@ -76,6 +76,41 @@ html{
     font-size: 25px;
 }
 
+@media (min-width: 219px) and (max-width:430px){
+    .iconoPais{
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .iconosPaises{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+    .sectionPaises{
+        margin: 10px;
+    }
+    .maps{
+        width: 5px;
+        height: 5px;
+    }
+    .whatsapp-button {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        z-index: 9999;
+    }
+    #map {
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
 
 
 
