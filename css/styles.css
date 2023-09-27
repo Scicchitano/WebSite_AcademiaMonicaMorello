@@ -657,4 +657,25 @@ nav .sidenav-trigger {
   .navbar-brand {
     margin-left: 10px;
   }
+  .titulosCategoriaCurso{
+    font-size: 20px;
+  }
+  h5{
+    scale: 70%;
+  }
+  #logoWP{
+    scale: 70%;
+  }
+  .tarjetasCursos{
+    display: block;
+  }
+  .cuerpoFooter{
+    display: flex;
+  }
+  .row .col.s3 {
+    width: 100%;
+  }
+  #logoEmpresa{
+    scale: 80%;
+  }
 }
