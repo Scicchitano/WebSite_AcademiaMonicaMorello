@@ -8,7 +8,7 @@ function showData(json) {
   console.log(json.length);
   /*Llama a la seccion productos */
   productosSeccionElement = document.getElementById("productosSeccion");
-  productosSeccionElement.classList.add("row");
+  productosSeccionElement.classList.add("row", "tarjetasCursos");
   /*Recorre todos los datos de dataProductos (post) y a su vez dentro del mismo JSON recorre los (items)*/
   json.forEach((post) => {
     console.log(post.categoria);
@@ -53,24 +53,21 @@ function showData(json) {
                   </div>
                   
                   `;
-                  /*Una vez que agrego los datos, me lo agrega la seccion productos en forma de tarjeta*/
+      /*Una vez que agrego los datos, me lo agrega la seccion productos en forma de tarjeta*/
       productosSeccionElement.appendChild(newCardElement);
     });
   });
 }
-
-
-
 
 /* Busca los datos en el JSON (dataproductos), es decir me trae todos los datos de cada card y lo manda al showData*/
 async function fetchData() {
   try {
     let jsonData = {};
     fetch("../json/dataProductos.json")
-    /*Entra en el THEN cuando es una respuesta exitosa o no*/
+      /*Entra en el THEN cuando es una respuesta exitosa o no*/
       .then((response) => response.json())
       .then((json) => showData(json));
-      /*Entra al catch cuando no encuentra datos en el pad del JSON*/
+    /*Entra al catch cuando no encuentra datos en el pad del JSON*/
   } catch (error) {
     console.error("Error fetching JSON data:", error);
   }
@@ -78,11 +75,6 @@ async function fetchData() {
 
 // Call the fetchData function to load and display the data
 fetchData();
-
-
-
-
-
 
 /*Funcion para poder descargar un catalogo con todos los productos*/
 async function abrirCatalogo() {
@@ -118,10 +110,6 @@ catalogoButton.addEventListener("mouseout", cerrarCatalogo);
 
 catalogoButton.addEventListener("click", descargarCatalogo);
 
-
-
-
-
 /*Funcion que para cuando se haga click en SOLICITAR se abra un modal con cantidad de productos y lo envies por wps*/
 function addProductoLS(producto, cantidad) {
   const existingDataString = localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS);
@@ -144,7 +132,6 @@ function addProductoLS(producto, cantidad) {
 
   existingData.items.push(newData);
 
- 
   localStorage.setItem(
     CLAVE_PRODUCTOS_CARRITO_LS,
     JSON.stringify(existingData)
@@ -160,15 +147,10 @@ function seleccionarCantidad(index) {
   instance.open();
 }
 
-
-
-
 function addCantidad() {
   const inputElement = document.getElementById("inputCantidadProductos");
   addProductoLS(productoAUX, inputElement.value);
 }
-
-
 
 const submitElement = document.getElementById("btnSubmit");
 submitElement.addEventListener("click", addCantidad);
@@ -182,7 +164,9 @@ console.log(solicitarElemento[0].innerText);
 console.log(tituloCardElemento[0].innerText);
 
 for (let index = 0; index < solicitarElemento.length; index++) {
-  console.log("index = " + index + "titulo = " + tituloCardElemento[index].innerText);
+  console.log(
+    "index = " + index + "titulo = " + tituloCardElemento[index].innerText
+  );
   solicitarElemento[index].addEventListener(
     "click",
     function () {
@@ -194,13 +178,12 @@ for (let index = 0; index < solicitarElemento.length; index++) {
 
 /*                             CARRITO                               */
 
-
 function eliminarProducto(producto) {
   console.log(producto);
   // Obtener los productos almacenados en localStorage
   const productosGuardados =
     JSON.parse(localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS)) || [];
-/*Te devuelve todos los items actualizados una vez que borro el producto */
+  /*Te devuelve todos los items actualizados una vez que borro el producto */
   var filtered = productosGuardados.items.filter(function (item) {
     return item.nombre !== producto;
   });
@@ -216,7 +199,6 @@ function eliminarProducto(producto) {
   updateModalCarrito();
 }
 
-
 /* crea la tabla con el ls actualizado */
 function updateModalCarrito() {
   const elem = document.getElementById("modalCarrito");
@@ -226,8 +208,6 @@ function updateModalCarrito() {
   divElement.classList = "modal";
   const bodyElement = document.getElementById("bodyCarrito");
   bodyElement.innerHTML = "";
-
-
 
   let strProductos = "";
 
@@ -254,13 +234,13 @@ function updateModalCarrito() {
     newCantidadElement.innerText = producto.cantidad;
     newRow.appendChild(newCantidadElement);
 
-//Utilizo strProductos para que cuando se agreguen productos me los coloque debajo, esto tambien se utiliza para wsp y asi el texto se ve prolijo*
+    //Utilizo strProductos para que cuando se agreguen productos me los coloque debajo, esto tambien se utiliza para wsp y asi el texto se ve prolijo*
     strProductos += " - " + producto.cantidad + "\n";
 
     console.log(
       `Producto: ${producto.nombre}, Cantidad: $${producto.cantidad}`
     );
-    // Aca eliminamos de la lista del carrito productos 
+    // Aca eliminamos de la lista del carrito productos
     const newAccionElement = document.createElement("td");
     const botonEliminarElement = document.createElement("button");
     newAccionElement.appendChild(botonEliminarElement);
@@ -278,17 +258,16 @@ function updateModalCarrito() {
     iconEliminarElement.innerHTML = "delete";
     botonEliminarElement.appendChild(iconEliminarElement);
     newRow.appendChild(newAccionElement);
-
   });
   instance.open();
-/*Poder configurar la API de wsp para agregar el mensaje que deseo que mande sin necesidad de en cada espacio agregarle %20*/
+  /*Poder configurar la API de wsp para agregar el mensaje que deseo que mande sin necesidad de en cada espacio agregarle %20*/
   console.log("strProductos : " + encodeURIComponent(strProductos));
   let btnPedirElement = document.getElementById("btnPedir");
-  btnPedirElement.href = "https://api.whatsapp.com/send?phone=5491164449898&text=" + encodeURIComponent("Hola ! Me gustaria pedir los siguientes productos: \n" + strProductos);
+  btnPedirElement.href =
+    "https://api.whatsapp.com/send?phone=5491164449898&text=" +
+    encodeURIComponent(
+      "Hola ! Me gustaria pedir los siguientes productos: \n" + strProductos
+    );
 }
 let carritoElement = document.getElementById("botonCarrito");
 carritoElement.addEventListener("click", updateModalCarrito);
-
-
-
-
