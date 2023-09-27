@@ -1,0 +1,72 @@
+
+
+@media (max-width: 768px) {
+    /* Estilo para el punto rojo de notificación */
+    .notification-dot {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 31px;
+        right: 18px;
+        z-index: 10;
+    }
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    .titulosCategoriaCurso {
+        font-size: 20px;
+    }
+
+    h5 {
+        scale: 70%;
+    }
+
+    #logoWP {
+        scale: 70%;
+    }
+
+    .tarjetasCursos {
+        display: block;
+    }
+
+    .cuerpoFooter {
+        display: flex;
+    }
+
+    .row .col.s3 {
+        width: 100%;
+    }
+
+    #logoEmpresa {
+        scale: 80%;
+    }
+    #botonCarrito{
+        display: flex;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 161px;
+        right: 276px;
+        z-index: 10;
+    }
+}
+
+
+
+/* Media query para ocultar la clase en pantallas con un ancho máximo de 768 píxeles */
+@media (max-width: 768px) {
+    .ocultarMapa {
+        display: none;
+    }
+}
+
+nav .sidenav-trigger {
+    float: right;
+}

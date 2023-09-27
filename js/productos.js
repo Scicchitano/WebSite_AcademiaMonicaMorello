@@ -270,4 +270,8 @@ function updateModalCarrito() {
     );
 }
 let carritoElement = document.getElementById("botonCarrito");
+let carritoElementQuery = document.getElementById("botonCarritoQuery");
+
+
 carritoElement.addEventListener("click", updateModalCarrito);
+carritoElementQuery.addEventListener("click", updateModalCarrito);

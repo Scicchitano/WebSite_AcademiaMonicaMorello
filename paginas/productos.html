@@ -57,26 +57,59 @@
 
 <!--PRODUCTOS-->
 
-  <header>
 
-        <!-- Dropdown Structure -->
-        <nav class="navGeneral">
-          <div class="nav-wrapper">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../multimedia/Logo.png" alt="Logo" width="60" height="60">
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down menuHeader">
-             
-              <li><a class="titleMenu" href="Cursos/TodosCursos.html">Cursos</a></li>
-              <li><a class="titleMenu" href="../paginas/productos.html">Productos</a></li>
-              <li><a class="titleMenu" href="../paginas/Nosotros.html">Nosotros</a></li>
-              <li><a class="titleMenu" id="botonCarrito"><i class="material-icons">shopping_cart</i></a></li>
-            </ul>
-          </div>
-        </nav>
-        
+<header>
+  <div class="notification-dot"></div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a class="titleMenu" href="../paginas/Cursos/TodosCursos.html">Cursos</a>
+    </li>
+    <li>
+      <a class="titleMenu" href="../paginas/productos.html">Productos</a>
+    </li>
+    <li>
+      <a class="titleMenu" href="../paginas/Nosotros.html">Nosotros</a>
+    </li>
+    <li>
+      <a class="titleMenu " id="botonCarritoQuery"><i class="material-icons">shopping_cart</i></a>
+      <div class="dot"></div>
+    </li>
+  </ul>
+  
+  <!-- Dropdown Structure -->
+  <nav class="navGeneral">
+    <div class="nav-wrapper">
+      <a class="navbar-brand" href="../index.html">
+        <img id="logoEmpresa" src="../multimedia/Logo.png" alt="Logo" width="60" height="60">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down menuHeader">
+        <li>
+          <a class="titleMenu" href="/Cursos/TodosCursos.html">Cursos</a>
+        </li>
+        <li>
+          <a class="titleMenu" href="../paginas/productos.html">Productos</a>
+        </li>
+        <li>
+          <a class="titleMenu" href="../paginas/Nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a class="titleMenu" id="botonCarrito"><i class="material-icons">shopping_cart</i></a>
+          <div class="dot"></div>
+        </li>
+      </ul>
+    </div>
 
-  </header>
+  </nav>
+
+
+
+</header>
+
+
+
 
   <div id="modal" class="modal modalAgregarProducto">
     <div class="container containerAgregarProducto">
@@ -1117,7 +1150,12 @@
   <script type="text/javascript" src="../js/index.js"></script>
   <script type="text/javascript" src="../js/TodosCursos.js"></script>
 
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
 
   
 </body>

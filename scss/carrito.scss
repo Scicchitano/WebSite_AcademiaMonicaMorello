@@ -15,3 +15,15 @@
 .textoTablaCarrito{
     font-size: 15px;
 }
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 36px;
+    right: 7px;
+    z-index: 10;
+}
