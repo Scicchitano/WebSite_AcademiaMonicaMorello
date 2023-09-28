@@ -3,6 +3,7 @@
 @media (max-width: 768px) {
     /* Estilo para el punto rojo de notificación */
     .notification-dot {
+        display: none;
         width: 10px;
         height: 10px;
         background-color: red;
@@ -47,6 +48,7 @@
         display: flex;
     }
     .dot {
+        display: none;
         width: 10px;
         height: 10px;
         background-color: red;

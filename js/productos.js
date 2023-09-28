@@ -275,3 +275,26 @@ let carritoElementQuery = document.getElementById("botonCarritoQuery");
 
 carritoElement.addEventListener("click", updateModalCarrito);
 carritoElementQuery.addEventListener("click", updateModalCarrito);
+
+
+
+
+
+
+
+/* PUNTO ROJO DE NOTIFICACION DE PRODUCTO */
+
+function isLSempty(clave) {
+  if (localStorage.length === 0) {
+    console.log('localStorage is empty.');
+  } else {
+    console.log(`localStorage has ${localStorage.length} item(s).`);
+  }
+}
+
+let dotHamburguesaElement = document.getElementById("notification-dot");
+let dotCarritoElement = document.getElementById("dot");
+
+if (condition) {
+  
+}
