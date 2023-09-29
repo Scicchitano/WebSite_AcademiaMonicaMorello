@@ -295,6 +295,11 @@ function isLSempty(clave) {
 let dotHamburguesaElement = document.getElementById("notification-dot");
 let dotCarritoElement = document.getElementById("dot");
 
-if (condition) {
-  
+const existingDataString = localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS);
+existingData = JSON.parse(existingDataString);
+
+
+console.log("existingDataString = " + existingData.items);
+if (!existingData.items) {
+  console.log("holaaaaaaaaaaaaaaa")
 }
