@@ -69,6 +69,75 @@
     }
 }
 
+
+
 nav .sidenav-trigger {
     float: right;
+}
+
+
+
+/*NOSOTROS*/
+
+@media (max-width: 768px) {
+    .containerQuienesSomos {
+        margin: 0px;
+        padding: 9px;
+    }
+    .card.horizontal {
+        display: block;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .card.horizontal .card-image {
+        max-width: 100%;
+        padding-bottom: 0%;
+    }
+    .cardStaffBody{
+        padding: 0px;
+    }
+    .iconSection{
+        margin-top: 10px;
+    }
+    .cardTituloQuienesSomos {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .iconsGrid {
+        padding: 0px;
+    }
+    .iconTitle {
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 0px !important; 
+    }
+    .iconText {
+        display: block;
+        scale: none;
+        font-size: 9px;
+    }
+    .imagenCardStaff {
+        width: 80px;
+    }
+    .cardStaff{
+        width: 100%;
+        display: flex;
+    }
+    .cardStaffDueña{
+        display: flex !important;
+    }
+    .cardTituloStaff {
+        font-size: 9px;
+    }
+    .textCardStaff{
+        font-size: 7px;
+    }
+    .cardStaffBody {
+        padding: 5px;
+        padding-top: 0px;
+    }
+    .sectionStaff {
+        margin: 7px;
+    }
 }
