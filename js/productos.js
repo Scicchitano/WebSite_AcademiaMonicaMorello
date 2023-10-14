@@ -74,7 +74,7 @@ async function fetchData() {
 }
 
 // Call the fetchData function to load and display the data
-fetchData();
+//fetchData();
 
 /*Funcion para poder descargar un catalogo con todos los productos*/
 async function abrirCatalogo() {
