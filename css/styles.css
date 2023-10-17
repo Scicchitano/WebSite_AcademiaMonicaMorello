@@ -576,6 +576,12 @@ h5 {
 }
 
 @media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: -7px !important;
+    right: -9px !important;
+  }
+}
+@media (max-width: 768px) {
   /* Estilo para el punto rojo de notificación */
   .notification-dot {
     display: none;
@@ -637,6 +643,18 @@ nav .sidenav-trigger {
   float: right;
 }
 
+/*PRODUCTOS*/
+@media (max-width: 768px) {
+  .tarjetasCursos .col {
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .tarjetasCursos {
+    display: block;
+    text-align: center;
+  }
+}
 /*NOSOTROS*/
 @media (max-width: 768px) {
   .containerQuienesSomos {
@@ -698,6 +716,9 @@ nav .sidenav-trigger {
   }
   .sectionStaff {
     margin: 7px;
+  }
+  .iconRow {
+    padding: 7px;
   }
 }
 * {
@@ -780,8 +801,8 @@ html {
   }
   .whatsapp-button {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: -7px;
+    right: -9px;
     z-index: 9999;
   }
   #map {

@@ -1,5 +1,15 @@
 
 
+
+@media (max-width: 768px) {
+    .whatsapp-button{
+        bottom: -7px !important;
+        right: -9px !important;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     /* Estilo para el punto rojo de notificación */
     .notification-dot {
@@ -76,6 +86,21 @@ nav .sidenav-trigger {
 }
 
 
+/*PRODUCTOS*/
+
+@media (max-width: 768px) {
+    .tarjetasCursos .col {
+        float: none;
+        display: inline-block;
+        text-align: center;
+    }
+    .tarjetasCursos {
+        display: block;
+        text-align: center;
+    }
+    
+}
+
 
 /*NOSOTROS*/
 
@@ -139,5 +164,8 @@ nav .sidenav-trigger {
     }
     .sectionStaff {
         margin: 7px;
+    }
+    .iconRow{
+        padding: 7px;
     }
 }
