@@ -645,7 +645,7 @@ nav .sidenav-trigger {
 /*INDEX*/
 @media (max-width: 768px) {
   .iconosPaises {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     margin: 30px;
   }
@@ -803,7 +803,7 @@ html {
     margin: 30px;
   }
   .sectionPaises {
-    margin: 10px;
+    margin: 0px;
   }
   .maps {
     width: 5px;
