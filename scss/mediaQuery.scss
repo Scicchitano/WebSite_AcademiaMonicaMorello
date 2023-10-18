@@ -86,6 +86,22 @@ nav .sidenav-trigger {
 }
 
 
+
+
+/*INDEX*/
+
+@media (max-width: 768px) {
+
+    .iconosPaises {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+    .iconoPais{
+        height: 20px;
+    }
+}
+
 /*PRODUCTOS*/
 
 @media (max-width: 768px) {

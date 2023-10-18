@@ -411,8 +411,7 @@ h5 {
 }
 
 .iconoPais {
-  width: 70px;
-  height: 70px;
+  height: 110px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 50px;
@@ -426,7 +425,7 @@ h5 {
 }
 
 .sectionPaises {
-  margin: 25px;
+  margin-top: 25px;
 }
 
 .sectionStaff {
@@ -643,6 +642,17 @@ nav .sidenav-trigger {
   float: right;
 }
 
+/*INDEX*/
+@media (max-width: 768px) {
+  .iconosPaises {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  .iconoPais {
+    height: 20px;
+  }
+}
 /*PRODUCTOS*/
 @media (max-width: 768px) {
   .tarjetasCursos .col {
