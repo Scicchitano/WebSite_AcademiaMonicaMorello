@@ -77,7 +77,8 @@ html{
     font-size: 25px;
 }
 
-@media (min-width: 219px) and (max-width:430px){
+
+@media (max-width: 768px) {
     .iconoPais{
         width: 30px;
         height: 30px;
@@ -95,6 +96,10 @@ html{
     .sectionPaises{
         margin: 0px;
     }
+}
+
+@media (min-width: 219px) and (max-width:430px){
+    
     .maps{
         width: 5px;
         height: 5px;
