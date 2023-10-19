@@ -303,6 +303,7 @@ function showDot_ifNecessary() {
   if (!isLSempty(existingData.items)) {
     dotHamburguesaElement[0].style.display = "flex";
     dotCarritoElement[0].style.display = "flex";
+    dotCarritoElement[1].style.display = "flex";
   }
 
 }

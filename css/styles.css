@@ -574,6 +574,14 @@ h5 {
   z-index: 10;
 }
 
+.dot::before {
+  content: "1"; /* Puedes cambiar este número según tus necesidades */
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 @media (max-width: 768px) {
   .whatsapp-button {
     bottom: -7px !important;
@@ -630,6 +638,9 @@ h5 {
     top: 161px;
     right: 276px;
     z-index: 10;
+  }
+  .dot::before {
+    content: "1"; /* Puedes cambiar este número según tus necesidades */
   }
 }
 /* Media query para ocultar la clase en pantallas con un ancho máximo de 768 píxeles */
