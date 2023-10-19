@@ -164,9 +164,9 @@ console.log(solicitarElemento[0].innerText);
 console.log(tituloCardElemento[0].innerText);
 
 for (let index = 0; index < solicitarElemento.length; index++) {
-  console.log(
+  /*console.log(
     "index = " + index + "titulo = " + tituloCardElemento[index].innerText
-  );
+  );*/
   solicitarElemento[index].addEventListener(
     "click",
     function () {
@@ -197,6 +197,7 @@ function eliminarProducto(producto) {
   );
 
   updateModalCarrito();
+  showDot_ifNecessary();
 }
 
 /* crea la tabla con el ls actualizado */
@@ -277,29 +278,37 @@ carritoElement.addEventListener("click", updateModalCarrito);
 carritoElementQuery.addEventListener("click", updateModalCarrito);
 
 
-
-
-
-
-
 /* PUNTO ROJO DE NOTIFICACION DE PRODUCTO */
 
-function isLSempty(clave) {
-  if (localStorage.length === 0) {
+function isLSempty(ls) {
+  if (ls.length === 0) {
     console.log('localStorage is empty.');
+    return true;
   } else {
-    console.log(`localStorage has ${localStorage.length} item(s).`);
+    console.log(`localStorage has ${ls.length} item(s).`);
+    return false;
   }
 }
 
-let dotHamburguesaElement = document.getElementById("notification-dot");
-let dotCarritoElement = document.getElementById("dot");
+function showDot_ifNecessary() {
+  
+  let dotHamburguesaElement = document.getElementsByClassName("notification-dot");
+  let dotCarritoElement = document.getElementsByClassName("dot");
+  
+  const existingDataString = localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS);
+  existingData = JSON.parse(existingDataString);
 
-const existingDataString = localStorage.getItem(CLAVE_PRODUCTOS_CARRITO_LS);
-existingData = JSON.parse(existingDataString);
+  dotCarritoElement[0].style.display = "none";
+  dotHamburguesaElement[0].style.display = "none";
+  if (!isLSempty(existingData.items)) {
+    dotHamburguesaElement[0].style.display = "flex";
+    dotCarritoElement[0].style.display = "flex";
+  }
 
-
-console.log("existingDataString = " + existingData.items);
-if (!existingData.items) {
-  console.log("holaaaaaaaaaaaaaaa")
 }
+
+
+
+
+showDot_ifNecessary();
+
