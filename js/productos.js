@@ -286,6 +286,18 @@ function isLSempty(ls) {
     return true;
   } else {
     console.log(`localStorage has ${ls.length} item(s).`);
+    // Selecciona el elemento con la clase .dot
+    const styleElement = document.createElement('style');
+    document.head.appendChild(styleElement);
+    const styleSheet = styleElement.sheet;
+
+    // Define una nueva regla para .dot::before
+    const newRule = `.dot::before { content: "${ls.length}"; }`;
+
+    // Inserta la nueva regla en la hoja de estilos
+    styleSheet.insertRule(newRule, 0);
+    // Cambia el contenido del pseudo-elemento ::before
+    //dotElement[0].content = "3";
     return false;
   }
 }

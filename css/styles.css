@@ -575,7 +575,7 @@ h5 {
 }
 
 .dot::before {
-  content: "1"; /* Puedes cambiar este número según tus necesidades */
+  content: "2"; /* Puedes cambiar este número según tus necesidades */
   top: 50%;
   left: 50%;
   position: absolute;
