@@ -564,8 +564,8 @@ h5 {
 
 .dot {
   display: none;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: red;
   border-radius: 50%;
   position: absolute;
@@ -592,14 +592,22 @@ h5 {
   /* Estilo para el punto rojo de notificación */
   .notification-dot {
     display: none;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
     top: 31px;
     right: 18px;
     z-index: 10;
+    color: white;
+  }
+  .notification-dot::before {
+    content: "3"; /* Puedes cambiar este número según tus necesidades */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
   }
   .navbar-brand {
     margin-left: 10px;
@@ -630,17 +638,22 @@ h5 {
   }
   .dot {
     display: none;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
     top: 161px;
     right: 276px;
     z-index: 10;
+    color: white;
   }
   .dot::before {
-    content: "1"; /* Puedes cambiar este número según tus necesidades */
+    content: "2"; /* Puedes cambiar este número según tus necesidades */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
   }
 }
 /* Media query para ocultar la clase en pantallas con un ancho máximo de 768 píxeles */

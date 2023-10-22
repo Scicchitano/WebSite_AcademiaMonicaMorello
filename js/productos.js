@@ -293,9 +293,13 @@ function isLSempty(ls) {
 
     // Define una nueva regla para .dot::before
     const newRule = `.dot::before { content: "${ls.length}"; }`;
+    const newRule2 = `.notification-dot::before { content: "${ls.length}"; }`;
 
+
+    
     // Inserta la nueva regla en la hoja de estilos
     styleSheet.insertRule(newRule, 0);
+    styleSheet.insertRule(newRule2, 0);
     // Cambia el contenido del pseudo-elemento ::before
     //dotElement[0].content = "3";
     return false;
